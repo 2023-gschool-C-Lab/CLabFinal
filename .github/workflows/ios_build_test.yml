@@ -6,9 +6,9 @@ jobs:
   # test build success
   Build:
     name: Build
-    runs-on: macos-12
+    runs-on: macos-13
     steps:
     - name: Checkout
       uses: actions/checkout@v3
     - name: Build Test
-      run: xcodebuild -project CLabFinal.xcodeproj -scheme CLabFinal -destination 'platform=iOS Simulator,OS=latest,name=Any iOS Simulator Device' -quiet clean build
+      run: xcodebuild -project CLabFinal.xcodeproj -scheme CLabFinal -destination 'platform=iOS Simulator,OS=latest,name=iPhone 13'
