@@ -11,4 +11,4 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     - name: Build Test
-      run: xcodebuild clean build -project CLabFinal.xcodeproj -scheme CLabFinal -destination 'platform=iOS Simulator,id=dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder'
+      run: xcodebuild clean build -project CLabFinal.xcodeproj -scheme CLabFinal -destination 'platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Any iOS Simulator Device'
